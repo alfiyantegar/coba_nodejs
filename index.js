@@ -10,5 +10,5 @@ app.use("/user", userRoute);
 app.use("/buku", bukuRoute);
 
 app.listen(port, () => {
-    console.log("Server Berjalan di Port " + port)
+    console.log("Server Berjalan di http://localhost:"+port);
 });
