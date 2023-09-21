@@ -1,12 +1,31 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Express HTML</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- Add your CSS styles here -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- Add your JavaScript libraries here -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        /* Add custom CSS styles here */
+        body {
+            padding-top: 20px;
+        }
+        .jumbotron {
+            background-color: #3498db;
+            color: #ffffff;
+            padding: 20px;
+        }
+        .navbar {
+            margin-bottom: 20px;
+        }
+    </style>
 </head>
 <body>
+    <!-- Navigation Bar -->
     <nav class="navbar navbar-inverse navbar-static-top">
         <div class="container">
             <a class="navbar-brand" href="/">Express HTML</a>
@@ -17,27 +36,25 @@
             </button>
             <div class="collapse navbar-collapse">
                 <ul class="nav navbar-nav">
-                    <li>
-                        <a href="/">Home</a>
-                    </li>
-                    <li class="active">
-                        <a href="/user">User</a>
-                    </li>
-                    <li>
-                        <a href="/buku">Buku</a>
-                    </li>
+                    <li><a href="/">Home</a></li>
+                    <li class="active"><a href="/user">User</a></li>
+                    <li><a href="/buku">Buku</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-        <div class="jumbotron" style="padding:40px;">
-            <h1>Ini Halaman User</h1>
-            <p>Selamat datang di halaman user. Anda dapat melakukan berbagai tindakan di sini.</p>
+    <!-- Page Content -->
+    <div class="container">
+        <div class="jumbotron">
+            <h3 class="text-center">Ini Halaman User</h3>
+            <p class="text-center">Selamat datang di halaman user. Anda dapat melakukan berbagai tindakan di sini.</p>
             
-            <form method="post" action="/user">
-                <button type="submit" class="btn btn-primary">Tambah User</button>
-            </form>
+            <div class="text-center">
+                <form method="post" action="/user">
+                    <button type="submit" class="btn btn-primary">Tambah User</button>
+                </form>
+            </div>
         </div>
 
         <div class="table-responsive">
@@ -54,7 +71,7 @@
                         <td>Alfiyan Tegar</td>
                         <td>tegarsh1@gmail.com</td>
                         <td>
-                            <form method="put" action="/user" style="display: inline;">
+                            <form method="post" action="/user" style="display: inline;">
                                 <button type="submit" class="btn btn-success">Update</button>
                             </form>
                             <form method="post" action="/user" style="display: inline;">
@@ -67,7 +84,7 @@
                         <td>Bagas Herlambang</td>
                         <td>Bagash@gmail.com</td>
                         <td>
-                            <form method="put" action="/user" style="display: inline;">
+                            <form method="post" action="/user" style="display: inline;">
                                 <button type="submit" class="btn btn-success">Update</button>
                             </form>
                             <form method="post" action="/user" style="display: inline;">
